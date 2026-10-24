@@ -1,52 +1,149 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genre Collections — REELFLIX</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A cinematic, responsive movie and TV show discovery page.">
+  <title>SHAWFLIX — Movies & Shows</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top"><div class="container-fluid px-3 px-lg-5">
-<a class="navbar-brand brand" href="reelflix_movie_show_template.html">SHAWFLIX</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-<div class="collapse navbar-collapse" id="mainNav"><ul class="navbar-nav ms-lg-4 me-auto mb-2 mb-lg-0"><li class="nav-item"><a class="nav-link" href="reelflix_movie_show_template.html">Home</a></li><li class="nav-item"><a class="nav-link active" href="#genres">Genres</a></li><li class="nav-item"><a class="nav-link" href="#featured">Featured</a></li><li class="nav-item"><a class="nav-link" href="#allTitles">All Titles</a></li></ul><div class="d-flex align-items-center gap-3 mt-2 mt-lg-0"><label class="visually-hidden" for="searchInput">Search titles</label><input id="searchInput" class="search-box" type="search" placeholder="Search titles..." autocomplete="off"><span class="small d-none d-sm-inline">Explore</span></div></div>
-</div></nav>
-<header class="genre-hero"><div class="container-fluid px-4 px-lg-5"><div class="hero-copy"><div class="eyebrow">SHAWFLIX COLLECTIONS · PICK YOUR MOOD</div><h1>Enter the<br>unknown.</h1><p>From pulse-pounding action to chilling horror, laugh-out-loud comedy, and unforgettable romance — explore a collection made for every mood. Choose a genre and find your next watch.</p><div class="d-flex flex-wrap gap-3 mt-4"><a class="btn btn-red" href="#allTitles">▶ &nbsp; Explore Collection</a><a class="btn btn-muted" href="#genres">Browse Genres ↓</a></div></div></div></header>
-<main class="container-fluid px-3 px-lg-5">
-<section id="genres" class="section-row"><div class="section-heading"><h2>Browse by Genre</h2><small>One collection, every mood</small></div><div class="genre-pills" role="group" aria-label="Filter by genre">
-<button class="genre-pill active" data-genre="All" type="button">All titles</button><button class="genre-pill" data-genre="Horror" type="button">👻 Horror</button><button class="genre-pill" data-genre="Action" type="button">💥 Action</button><button class="genre-pill" data-genre="Comedy" type="button">😂 Comedy</button><button class="genre-pill" data-genre="Romance" type="button">❤️ Romance</button><button class="genre-pill" data-genre="Sci-Fi" type="button">🚀 Sci-Fi</button><button class="genre-pill" data-genre="Adventure" type="button">🌍 Adventure</button><button class="genre-pill" data-genre="Drama" type="button">🎭 Drama</button><button class="genre-pill" data-genre="Thriller" type="button">🔪 Thriller</button>
-</div></section>
-<section class="section-row" id="featured"><div class="section-heading"><h2>🔥 Featured This Week</h2><small>Spotlight collection</small></div><div class="poster-grid">
-<a class="movie-card" data-genre="Horror" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Enola 2020 in a new tab"><img src="assets/img/enola1.jpg?auto=format&fit=crop&w=600&q=80" alt="Dark atmospheric horror scene" loading="lazy"><div class="card-overlay"><span class="tag">Featured</span><strong>Enola Holmes</strong><span>Comedy · Fantasy · 2020</span></div></a>
-<a class="movie-card" data-genre="Action" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Enola 2022 in a new tab"><img src="assets/img/enola2.jpeg?auto=format&fit=crop&w=600&q=80" alt="Dramatic city at night" loading="lazy"><div class="card-overlay"><span class="tag">Featured</span><strong>Enola Holmes</strong><span>Comedy · Fantasy · 2022</span></div></a>
-<a class="movie-card" data-genre="Comedy" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Roommates in a new tab"><img src="assets/img/enola3.jpeg?auto=format&fit=crop&w=600&q=80" alt="Colorful party lights" loading="lazy"><div class="card-overlay"><span class="tag">Featured</span><strong>Enola Holmes</strong><span>Comedy · Fantasy · 2026</span></div></a>
-<a class="movie-card" data-genre="Romance" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Letters to June in a new tab"><img src="assets/img/TheConjuring2.jpg?auto=format&fit=crop&w=600&q=80" alt="Warm golden sunset landscape" loading="lazy"><div class="card-overlay"><span class="tag">New</span><strong>Letters to June</strong><span>Romance · Drama</span></div></a>
-<a class="movie-card" data-genre="Sci-Fi" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Beyond Orbit in a new tab"><img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=600&q=80" alt="Colorful nebula and stars" loading="lazy"><div class="card-overlay"><span class="tag">Sci-Fi</span><strong>Beyond Orbit</strong><span>Sci-Fi · Adventure</span></div></a>
-<a class="movie-card" data-genre="Thriller" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open No Exit in a new tab"><img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=600&q=80" alt="Shadowy forest atmosphere" loading="lazy"><div class="card-overlay"><span class="tag">Edge of seat</span><strong>No Exit</strong><span>Thriller · Mystery</span></div></a>
-</div></section>
-<section class="section-row" id="allTitles"><div class="section-heading"><h2 id="collectionHeading">All Movies & Shows</h2><small>Choose a title to open its link</small></div><div class="filter-bar"><div class="result-count" id="resultCount" aria-live="polite">Showing 12 titles</div><label class="d-flex align-items-center gap-2 small text-secondary">Sort by <select class="filter-select" id="sortSelect" aria-label="Sort titles"><option value="featured">Featured</option><option value="az">Title A–Z</option><option value="za">Title Z–A</option></select></label></div><div class="poster-grid" id="titleGrid">
-<a class="movie-card" data-genre="Horror" data-title="The Night House" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open The Night House in a new tab"><img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80" alt="Dark cinematic landscape" loading="lazy"><div class="card-overlay"><strong>The Night House</strong><span>Horror · 2026</span></div></a>
-<a class="movie-card" data-genre="Horror" data-title="Whispering Woods" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Whispering Woods in a new tab"><img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=600&q=80" alt="Dense shadowy forest" loading="lazy"><div class="card-overlay"><strong>Whispering Woods</strong><span>Horror · Mystery</span></div></a>
-<a class="movie-card" data-genre="Action" data-title="Redline" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Redline in a new tab"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80" alt="Sports car on the road" loading="lazy"><div class="card-overlay"><strong>Redline</strong><span>Action · Crime</span></div></a>
-<a class="movie-card" data-genre="Action" data-title="Steel Horizon" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Steel Horizon in a new tab"><img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=600&q=80" alt="City skyline at night" loading="lazy"><div class="card-overlay"><strong>Steel Horizon</strong><span>Action · Adventure</span></div></a>
-<a class="movie-card" data-genre="Comedy" data-title="Weekend Chaos" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Weekend Chaos in a new tab"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80" alt="Colorful party lights" loading="lazy"><div class="card-overlay"><strong>Weekend Chaos</strong><span>Comedy · 2026</span></div></a>
-<a class="movie-card" data-genre="Comedy" data-title="Almost Famous" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Almost Famous in a new tab"><img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=600&q=80" alt="Concert crowd under stage lights" loading="lazy"><div class="card-overlay"><strong>Almost Famous</strong><span>Comedy · Music</span></div></a>
-<a class="movie-card" data-genre="Romance" data-title="Summer Promise" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Summer Promise in a new tab"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80" alt="Sunlit scenic landscape" loading="lazy"><div class="card-overlay"><strong>Summer Promise</strong><span>Romance · Drama</span></div></a>
-<a class="movie-card" data-genre="Romance" data-title="A Thousand Sundays" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open A Thousand Sundays in a new tab"><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=600&q=80" alt="Soft pink flowers in bloom" loading="lazy"><div class="card-overlay"><strong>A Thousand Sundays</strong><span>Romance · 2026</span></div></a>
-<a class="movie-card" data-genre="Sci-Fi" data-title="Dark Matter" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Dark Matter in a new tab"><img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&w=600&q=80" alt="Stars in a deep night sky" loading="lazy"><div class="card-overlay"><strong>Dark Matter</strong><span>Sci-Fi · Thriller</span></div></a>
-<a class="movie-card" data-genre="Adventure" data-title="Wild Frontier" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Wild Frontier in a new tab"><img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=600&q=80" alt="Open wilderness and hills" loading="lazy"><div class="card-overlay"><strong>Wild Frontier</strong><span>Adventure · Action</span></div></a>
-<a class="movie-card" data-genre="Drama" data-title="The Last Sunrise" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open The Last Sunrise in a new tab"><img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=600&q=80" alt="Golden sunrise across a field" loading="lazy"><div class="card-overlay"><strong>The Last Sunrise</strong><span>Drama · 2026</span></div></a>
-<a class="movie-card" data-genre="Thriller" data-title="Silent Signal" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Silent Signal in a new tab"><img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=600&q=80" alt="Moody city at night" loading="lazy"><div class="card-overlay"><strong>Silent Signal</strong><span>Thriller · Mystery</span></div></a>
-</div></section>
-<section class="feature-banner"><div><h3>Every genre has a story.</h3><p>Keep this page as your genre hub, then duplicate it to build dedicated Horror, Action, Comedy, and Romance pages.</p></div><a class="btn btn-red flex-shrink-0" href="#genres">Choose a Genre ↗</a></section>
-</main>
-<footer class="footer"><div class="container-fluid px-4 px-lg-5 d-flex flex-wrap justify-content-between align-items-center gap-3"><div><span class="brand">REELFLIX</span><div class="mt-2">A fan-made movie discovery template. Not affiliated with Netflix.</div></div><div class="d-flex gap-3"><a href="reelflix_movie_show_template.html">Home</a><a href="#genres">Genres</a><a href="#allTitles">All Titles</a></div><div>© <span id="year"></span> REELFLIX</div></div></footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-document.getElementById('year').textContent=new Date().getFullYear();
-const searchInput=document.getElementById('searchInput'),genreButtons=[...document.querySelectorAll('.genre-pill')],cards=[...document.querySelectorAll('#titleGrid .movie-card')],featuredCards=[...document.querySelectorAll('#featured .movie-card')],sortSelect=document.getElementById('sortSelect'),resultCount=document.getElementById('resultCount'),collectionHeading=document.getElementById('collectionHeading');let selectedGenre='All';
-function updateTitles(){const term=searchInput.value.trim().toLowerCase();const sorted=[...cards].sort((a,b)=>{const at=(a.dataset.title||a.innerText).toLowerCase(),bt=(b.dataset.title||b.innerText).toLowerCase();if(sortSelect.value==='az')return at.localeCompare(bt);if(sortSelect.value==='za')return bt.localeCompare(at);return cards.indexOf(a)-cards.indexOf(b)});sorted.forEach(card=>document.getElementById('titleGrid').appendChild(card));let visible=0;cards.forEach(card=>{const genreMatch=selectedGenre==='All'||(card.dataset.genre||'').split(',').map(s=>s.trim()).includes(selectedGenre);const text=((card.dataset.title||'')+' '+card.innerText+' '+(card.getAttribute('aria-label')||'')).toLowerCase();const show=genreMatch&&text.includes(term);card.style.display=show?'':'none';if(show)visible++});featuredCards.forEach(card=>{const genreMatch=selectedGenre==='All'||(card.dataset.genre||'').split(',').map(s=>s.trim()).includes(selectedGenre);const text=(card.innerText+' '+(card.getAttribute('aria-label')||'')).toLowerCase();card.style.display=genreMatch&&text.includes(term)?'':'none'});resultCount.textContent=`Showing ${visible} ${visible===1?'title':'titles'}`;collectionHeading.textContent=selectedGenre==='All'?'All Movies & Shows':`${selectedGenre} Movies & Shows`}
-genreButtons.forEach(button=>button.addEventListener('click',()=>{selectedGenre=button.dataset.genre;genreButtons.forEach(item=>item.classList.toggle('active',item===button));updateTitles();document.getElementById('allTitles').scrollIntoView({behavior:'smooth',block:'start'})}));searchInput.addEventListener('input',updateTitles);sortSelect.addEventListener('change',updateTitles);updateTitles();
-</script></body></html>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid px-3 px-lg-5">
+      <a class="navbar-brand brand" href="#">SHAWFLIX</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-lg-4 me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#trending">Trending</a></li>
+          <li class="nav-item"><a class="nav-link" href="#movies">Movies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#shows">TV Shows</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3 mt-2 mt-lg-0">
+          <!-- <label class="visually-hidden" for="searchInput">Search movies and shows</label> -->
+          <!-- <input id="searchInput" class="search-box" type="search" placeholder="Search titles..." autocomplete="off"> -->
+          <a href="#"><span class="small d-none d-sm-inline">Pro Users</span></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="hero-content">
+        <div class="eyebrow">✦ Your next obsession starts here</div>
+        <h1>Stories<br>that stay<br>with you.</h1>
+        <p>Discover your next favorite movie or series. Explore hand-picked adventures, edge-of-your-seat thrillers, and unforgettable stories — all in one place.</p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a class="btn btn-watch" href="#trending"><span aria-hidden="true">▶</span> &nbsp; Explore Titles</a>
+          <a class="btn btn-info-soft" href="#movies"><span aria-hidden="true">ⓘ</span> &nbsp; Browse Collection</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-fluid px-3 px-lg-5">
+    <section class="section-row" id="trending">
+      <div class="section-heading"><h2>🔥 Trending Now</h2><small>Popular picks for you</small></div>
+      <div class="poster-grid" id="trendingGrid">
+        <!-- TEMPLATE: replace image src, title, details, and href for each card. -->
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Shadow Protocol in a new tab">
+          <img src="assets/img/enola1.jpg?auto=format&fit=crop&w=600&q=80" alt="Moody cinematic landscape poster" loading="lazy">
+          <div class="card-overlay"><span class="tag">Fan Favorite</span><strong>Enola Holmes</strong><span>Comedy · Fantasy · 2020</span></div>
+        </a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Neon City in a new tab">
+          <img src="assets/img/enola2.jpeg?auto=format&fit=crop&w=600&q=80" alt="Night sky over a cinematic city" loading="lazy">
+          <div class="card-overlay"><span class="tag">Fan Favorite</span><strong>Enola Holmes</strong><span>Comedy · Fantasy · 2022</span></div>
+        </a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open The Last Horizon in a new tab">
+          <img src="assets/img/enola3.jpeg?auto=format&fit=crop&w=600&q=80" alt="Golden light across a misty landscape" loading="lazy">
+          <div class="card-overlay"><span class="tag">Fan Favorite</span><strong>Enola Holmes</strong><span>Comedy · Fantasy · 2026</span></div>
+        </a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Crimson Tide in a new tab">
+          <img src="assets/img/TheNun2018.jpg?auto=format&fit=crop&w=600&q=80" alt="Dramatic natural landscape" loading="lazy">
+          <div class="card-overlay"><span class="tag">Fan Favorite</span><strong>The Nun</strong><span>Horror · Thriller · 2018</span></div>
+        </a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Parallel in a new tab">
+          <img src="assets/img/TheConjuring2.jpg?auto=format&fit=crop&w=600&q=80" alt="Star-filled night sky" loading="lazy">
+          <div class="card-overlay"><span class="tag">Fan Favorite</span><strong>Conjuring 2 </strong><span>Horror · Thriller · 2016</span></div>
+        </a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Wild Frontier in a new tab">
+          <img src="assets/img/TheCurseOfLaLlorona.jpg?auto=format&fit=crop&w=600&q=80" alt="Expansive cinematic wilderness" loading="lazy">
+          <div class="card-overlay"><span class="tag">>Fan Favorite</span><strong>The Curse of La Llorona</strong><span>Horror · ThrillerThriller · 2019</span></div>
+        </a>
+        <!-- <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Parallel in a new tab">
+          <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&w=600&q=80" alt="Star-filled night sky" loading="lazy">
+          <div class="card-overlay"><span class="tag">Sci-Fi</span><strong>Parallel</strong><span>Sci-Fi · Mystery</span></div>
+        </a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Wild Frontier in a new tab">
+          <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=600&q=80" alt="Expansive cinematic wilderness" loading="lazy">
+          <div class="card-overlay"><span class="tag">Adventure</span><strong>Wild Frontier</strong><span>Adventure · Action</span></div>
+        </a> -->
+      </div>
+    </section>
+
+    <section class="section-row" id="movies">
+      <!-- <div class="section-heading"><h2>🎬 Movies Worth Your Time</h2><small>Big-screen energy</small></div> -->
+      <div class="section-heading"><h2>🎬 Movies Worth Your Time</h2><small>Big-screen energy Upcoming..</small></div>
+
+      <!-- <div class="poster-grid">
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Midnight Run in a new tab"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=600&q=80" alt="Cinema screen and audience" loading="lazy"><div class="card-overlay"><strong>Midnight Run</strong><span>Action · 2h 08m</span></div></a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Blue Echo in a new tab"><img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=600&q=80" alt="Deep blue ocean waves" loading="lazy"><div class="card-overlay"><strong>Blue Echo</strong><span>Drama · 1h 54m</span></div></a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Afterglow in a new tab"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80" alt="Sunlit desert landscape" loading="lazy"><div class="card-overlay"><strong>Afterglow</strong><span>Romance · 1h 49m</span></div></a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Dark Matter in a new tab"><img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=600&q=80" alt="Colorful nebula in deep space" loading="lazy"><div class="card-overlay"><strong>Dark Matter</strong><span>Sci-Fi · 2h 12m</span></div></a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open The Climb in a new tab"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80" alt="Mountain peaks beneath the clouds" loading="lazy"><div class="card-overlay"><strong>The Climb</strong><span>Adventure · 1h 58m</span></div></a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Last Light in a new tab"><img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=600&q=80" alt="Quiet scenic wilderness" loading="lazy"><div class="card-overlay"><strong>Last Light</strong><span>Mystery · 1h 46m</span></div></a>
+      </div> -->
+    </section>
+
+    <section class="section-row" id="shows">
+      <!-- <div class="section-heading"><h2>📺 Binge-Worthy Series</h2><small>One more episode?</small></div> -->
+      <div class="section-heading"><h2>📺 Binge-Worthy Series</h2><small>One more episode Upcoming?</small></div>
+      <!-- <div class="poster-grid">
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open The Divide in a new tab"><img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=600&q=80" alt="Dark forest with sunbeams" loading="lazy"><div class="card-overlay"><strong>The Divide</strong><span>Thriller · 3 Seasons</span></div></a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Parallel Lives in a new tab"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=600&q=80" alt="Mountain beneath a starry sky" loading="lazy"><div class="card-overlay"><strong>Parallel Lives</strong><span>Drama · 2 Seasons</span></div></a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Northbound in a new tab"><img src="https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=600&q=80" alt="Snowy mountain wilderness" loading="lazy"><div class="card-overlay"><strong>Northbound</strong><span>Adventure · 1 Season</span></div></a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open City of Ghosts in a new tab"><img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=600&q=80" alt="Night sky and city lights" loading="lazy"><div class="card-overlay"><strong>City of Ghosts</strong><span>Mystery · 4 Seasons</span></div></a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Wild Earth in a new tab"><img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=600&q=80" alt="Golden morning across a field" loading="lazy"><div class="card-overlay"><strong>Wild Earth</strong><span>Documentary · 2 Seasons</span></div></a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Signal Zero in a new tab"><img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&w=600&q=80" alt="Stars and distant galaxies" loading="lazy"><div class="card-overlay"><strong>Signal Zero</strong><span>Sci-Fi · 2 Seasons</span></div></a>
+      </div> -->
+    </section>
+
+    <section class="feature-strip">
+      <div><h3>Your watchlist. Your next favorite.</h3><p>Found something interesting? Add your own posters and link each title to its official page.</p></div>
+      <a class="btn btn-watch flex-shrink-0" href="#trending">Explore Collection &nbsp; →</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row g-3 align-items-center">
+        <div class="col-md"><span class="brand">SHAWFLIX</span><p class="mt-2 mb-0">A fan-made movie discovery template. Not affiliated with Netflix.</p></div>
+        <div class="col-md-auto d-flex flex-wrap gap-3"><a href="#home">Home</a><a href="#movies">Movies</a><a href="#shows">TV Shows</a></div>
+        <div class="col-md-auto text-md-end">© <span id="year"></span> SHAWFLIX</div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Search filters poster cards by their visible title and details.
+    const searchInput = document.getElementById('searchInput');
+    const cards = [...document.querySelectorAll('.movie-card')];
+    searchInput.addEventListener('input', () => {
+      const term = searchInput.value.trim().toLowerCase();
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase() + ' ' + (card.getAttribute('aria-label') || '').toLowerCase();
+        card.style.display = text.includes(term) ? '' : 'none';
+      });
+      document.querySelectorAll('.section-row').forEach(section => {
+        const visible = [...section.querySelectorAll('.movie-card')].some(card => card.style.display !== 'none');
+        section.style.display = visible ? '' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>
