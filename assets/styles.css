@@ -1,45 +1,6 @@
-    :root{--red:#e50914;--bg:#090909;--panel:#151515;--muted:#a8a8a8}
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:#fff;font-family:"DM Sans",sans-serif}
-    a{color:inherit;text-decoration:none}
-    .navbar{background:linear-gradient(180deg,rgba(0,0,0,.92),rgba(0,0,0,.2));z-index:10}
-    .brand{font:700 2rem "Oswald",sans-serif;letter-spacing:1.5px;color:var(--red)!important}
-    .nav-link{color:#e7e7e7!important;font-size:.92rem}.nav-link:hover{color:#fff!important}
-    .search-box{background:rgba(0,0,0,.65);border:1px solid #666;color:#fff;border-radius:4px;padding:.5rem .7rem;width:min(220px,40vw)}
-    .search-box:focus{outline:2px solid #fff;outline-offset:2px}
-    .hero{min-height:610px;display:flex;align-items:center;position:relative;overflow:hidden;
-      background:linear-gradient(90deg,#090909 0%,rgba(9,9,9,.88) 31%,rgba(9,9,9,.28) 75%,rgba(9,9,9,.5) 100%),
-      linear-gradient(0deg,#090909 0%,transparent 42%),url('https://images.unsplash.com/photo-1489599849927-2ee91ece3ba7?auto=format&fit=crop&w=2000&q=85') center 38%/cover}
-    .hero-content{position:relative;z-index:1;max-width:650px;padding-top:70px;padding-bottom:100px}
-    .eyebrow{color:#ffb5b8;font-size:.8rem;letter-spacing:3px;font-weight:700;text-transform:uppercase}
-    .hero h1{font:700 clamp(3.5rem,8vw,7.2rem)/.95 "Oswald",sans-serif;letter-spacing:-1px;text-transform:uppercase;margin:18px 0}
-    .hero p{color:#e2e2e2;line-height:1.75;max-width:560px}
-    .btn-watch{background:#fff;color:#111;font-weight:700;border:0;border-radius:4px;padding:12px 23px}
-    .btn-watch:hover{background:#ddd;color:#111}.btn-info-soft{background:rgba(109,109,110,.65);color:#fff;border:0;font-weight:700;border-radius:4px;padding:12px 22px}
-    .btn-info-soft:hover{background:rgba(109,109,110,.4);color:#fff}
-    main{position:relative;margin-top:-42px;z-index:2}
-    .section-row{margin-bottom:36px}
-    .section-heading{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:14px}
-    .section-heading h2{font-size:1.35rem;font-weight:700;margin:0}
-    .section-heading small{color:var(--muted)}
-    .poster-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:15px}
-    .movie-card{position:relative;display:block;border-radius:7px;overflow:hidden;background:#1d1d1d;aspect-ratio:2/3;transition:transform .22s ease,box-shadow .22s ease;isolation:isolate}
-    .movie-card:hover,.movie-card:focus-visible{transform:scale(1.045);z-index:3;box-shadow:0 12px 35px #000b;outline:2px solid #fff}
-    .movie-card img{width:100%;height:100%;object-fit:cover;display:block}
-    .poster-placeholder{height:100%;display:flex;align-items:center;justify-content:center;text-align:center;padding:14px;background:radial-gradient(circle at 25% 20%,#5b1720,#171717 60%);font:600 1.2rem "Oswald",sans-serif;letter-spacing:1px;color:#eee}
-    .card-overlay{position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.95));display:flex;flex-direction:column;justify-content:flex-end;padding:12px;opacity:0;transition:opacity .2s}
-    .movie-card:hover .card-overlay,.movie-card:focus-visible .card-overlay{opacity:1}
-    .card-overlay strong{font-size:.94rem}.card-overlay span{font-size:.75rem;color:#ddd;margin-top:4px}
-    .tag{font-size:.68rem;text-transform:uppercase;letter-spacing:1px;color:#fff;background:var(--red);padding:4px 7px;border-radius:3px;align-self:flex-start;margin-bottom:6px}
-    .number-card{display:flex;align-items:center;gap:0;min-width:0}
-    .rank{font:700 6rem/.8 "Oswald",sans-serif;color:#111;-webkit-text-stroke:2px #888;margin-right:-14px;z-index:1}
-    .number-card .movie-card{flex:1;min-width:0}
-    .feature-strip{border:1px solid #282828;border-radius:10px;padding:24px;background:linear-gradient(110deg,#1a1a1a,#111);display:flex;justify-content:space-between;align-items:center;gap:20px;margin:15px 0 45px}
-    .feature-strip h3{font:600 1.7rem "Oswald",sans-serif;margin:0 0 5px}.feature-strip p{color:var(--muted);margin:0}
-    .footer{border-top:1px solid #242424;color:#888;padding:35px 0 28px;font-size:.86rem}
-    .footer a{color:#aaa}.footer a:hover{color:#fff}
-    .empty-state{color:#bbb;padding:35px 0}
-    @media(max-width:1199px){.poster-grid{grid-template-columns:repeat(5,minmax(0,1fr))}.hero{min-height:570px}}
-    @media(max-width:767px){.poster-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.hero{min-height:570px;background-position:58% center}.hero-content{padding-top:95px}.hero p{font-size:.93rem}.brand{font-size:1.65rem}.section-heading h2{font-size:1.15rem}.rank{font-size:4.4rem;margin-right:-10px}.feature-strip{align-items:flex-start;flex-direction:column}.search-box{width:145px}}
-    @media(max-width:420px){.poster-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero h1{font-size:3.4rem}.search-box{width:112px}.brand{font-size:1.4rem}}
-    @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+:root{--red:#e50914;--bg:#090909;--muted:#aaa}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#fff;font-family:"DM Sans",sans-serif}a{color:inherit;text-decoration:none}
+.navbar{background:linear-gradient(180deg,#000f,#0009);z-index:20;backdrop-filter:blur(10px)}.brand{font:700 2rem "Oswald",sans-serif;letter-spacing:1.5px;color:var(--red)!important}.nav-link{color:#e7e7e7!important}.nav-link:hover,.nav-link.active{color:#fff!important}.search-box{background:#111;border:1px solid #555;color:#fff;border-radius:4px;padding:.5rem .7rem;width:min(220px,40vw)}.search-box:focus{outline:2px solid #fff;outline-offset:2px}
+.genre-hero{min-height:450px;display:flex;align-items:end;position:relative;overflow:hidden;background:linear-gradient(90deg,#000f 0%,#000c 42%,#0002 100%),linear-gradient(0deg,#090909 0%,transparent 65%),url('https://images.unsplash.com/photo-1509248961158-e54f6934749c?auto=format&fit=crop&w=2000&q=85') center 35%/cover}.hero-copy{max-width:760px;padding:145px 0 72px}.eyebrow{font-size:.76rem;text-transform:uppercase;letter-spacing:3px;color:#ffb8bc;font-weight:700}h1{font:700 clamp(3.5rem,8vw,6.8rem)/.95 "Oswald",sans-serif;text-transform:uppercase;margin:14px 0 18px}.hero-copy p{max-width:610px;color:#ddd;line-height:1.75}.btn-red{background:var(--red);color:#fff;border:0;border-radius:4px;font-weight:700;padding:11px 20px}.btn-red:hover{background:#b80710;color:#fff}.btn-muted{background:#6d6d6eaa;color:#fff;border:0;border-radius:4px;font-weight:700;padding:11px 20px}.btn-muted:hover{background:#6d6d6ecc;color:#fff}
+.genre-pills{display:flex;gap:9px;overflow-x:auto;padding:18px 0 12px;scrollbar-width:thin}.genre-pill{white-space:nowrap;border:1px solid #454545;border-radius:999px;padding:8px 16px;color:#ddd;background:#141414;font-size:.88rem;transition:.18s}.genre-pill:hover,.genre-pill.active{background:#fff;color:#111;border-color:#fff}main{position:relative;z-index:2}.section-row{margin:22px 0 38px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:15px}.section-heading h2{font-size:1.35rem;font-weight:700;margin:0}.section-heading small{color:var(--muted)}.poster-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:15px}.movie-card{position:relative;display:block;aspect-ratio:2/3;min-width:0;overflow:hidden;border-radius:6px;background:#1c1c1c;transition:transform .2s,box-shadow .2s;isolation:isolate}.movie-card:hover,.movie-card:focus-visible{transform:scale(1.045);z-index:3;box-shadow:0 12px 32px #000c;outline:2px solid #fff}.movie-card img{display:block;width:100%;height:100%;object-fit:cover}.card-overlay{position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#000f);display:flex;flex-direction:column;justify-content:end;padding:12px;opacity:0;transition:opacity .2s}.movie-card:hover .card-overlay,.movie-card:focus-visible .card-overlay{opacity:1}.card-overlay strong{font-size:.94rem}.card-overlay span{font-size:.76rem;color:#ddd;margin-top:4px}.tag{font-size:.67rem;letter-spacing:1px;text-transform:uppercase;background:var(--red);border-radius:3px;padding:4px 7px;align-self:start;margin-bottom:6px}
+.filter-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:10px 0 18px}.filter-select{background:#151515;color:#fff;border:1px solid #555;border-radius:4px;padding:9px 32px 9px 12px}.result-count{color:#aaa;font-size:.88rem}.feature-banner{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:35px 0 48px;padding:28px;border:1px solid #303030;border-radius:10px;background:linear-gradient(110deg,#291014,#151515 65%,#101010)}.feature-banner h3{font:600 1.7rem "Oswald",sans-serif;margin:0 0 7px}.feature-banner p{color:#ccc;margin:0}.footer{border-top:1px solid #242424;color:#888;padding:32px 0;font-size:.85rem}.footer a{color:#aaa}.footer a:hover{color:#fff}
+@media(max-width:1199px){.poster-grid{grid-template-columns:repeat(5,minmax(0,1fr))}}@media(max-width:767px){.poster-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.genre-hero{min-height:430px;background-position:60% center}.hero-copy{padding:130px 0 60px}.brand{font-size:1.65rem}.section-heading h2{font-size:1.13rem}.feature-banner{align-items:flex-start;flex-direction:column}.search-box{width:145px}.filter-bar{align-items:flex-start;flex-direction:column}}@media(max-width:420px){.poster-grid{grid-template-columns:repeat(2,minmax(0,1fr))}h1{font-size:3.3rem}.brand{font-size:1.4rem}.search-box{width:112px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
