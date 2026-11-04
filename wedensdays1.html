@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A cinematic, responsive movie and TV show discovery page.">
+  <title>SHAWFLIX — Movies & Shows</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid px-3 px-lg-5">
+      <a class="navbar-brand brand" href="#">SHAWFLIX</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-lg-4 me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#trending">Trending</a></li>
+          <li class="nav-item"><a class="nav-link" href="#movies">Movies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#shows">TV Shows</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3 mt-2 mt-lg-0">
+          <!-- <label class="visually-hidden" for="searchInput">Search movies and shows</label> -->
+          <!-- <input id="searchInput" class="search-box" type="search" placeholder="Search titles..." autocomplete="off"> -->
+          <a href="#"><span class="small d-none d-sm-inline">Pro Users</span></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="hero-content">
+        <div class="eyebrow">✦ Your next obsession starts here</div>
+        <h1>Stories<br>that stay<br>with you.</h1>
+        <p>Discover your next favorite movie or series. Explore hand-picked adventures, edge-of-your-seat thrillers, and unforgettable stories — all in one place.</p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a class="btn btn-watch" href="#trending"><span aria-hidden="true">▶</span> &nbsp; Explore Titles</a>
+          <a class="btn btn-info-soft" href="#movies"><span aria-hidden="true">ⓘ</span> &nbsp; Browse Collection</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-fluid px-3 px-lg-5">
+    <section class="section-row" id="trending">
+      <div class="section-heading"><h2>🔥 Trending Now</h2><small>Popular picks for you</small></div>
+      <div class="poster-grid" id="trendingGrid">
+        <!-- TEMPLATE: replace image src, title, details, and href for each card. -->
+       <iframe width="560" height="315" src="//ok.ru/videoembed/18558549035587?nochat=1" frameborder="0" allow="autoplay" allowfullscreen></iframe>	
+
+        <!-- <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Parallel in a new tab">
+          <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&w=600&q=80" alt="Star-filled night sky" loading="lazy">
+          <div class="card-overlay"><span class="tag">Sci-Fi</span><strong>Parallel</strong><span>Sci-Fi · Mystery</span></div>
+        </a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Wild Frontier in a new tab">
+          <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=600&q=80" alt="Expansive cinematic wilderness" loading="lazy">
+          <div class="card-overlay"><span class="tag">Adventure</span><strong>Wild Frontier</strong><span>Adventure · Action</span></div>
+        </a> -->
+      </div>
+    </section>
+
+    <!-- <section class="section-row" id="movies"> -->
+      <!-- <div class="section-heading"><h2>🎬 Movies Worth Your Time</h2><small>Big-screen energy</small></div> -->
+      <!-- <div class="section-heading"><h2>🎬 Movies Worth Your Time</h2><small>Big-screen energy Upcoming..</small></div> -->
+
+      <!-- <div class="poster-grid">
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Midnight Run in a new tab"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=600&q=80" alt="Cinema screen and audience" loading="lazy"><div class="card-overlay"><strong>Midnight Run</strong><span>Action · 2h 08m</span></div></a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Blue Echo in a new tab"><img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=600&q=80" alt="Deep blue ocean waves" loading="lazy"><div class="card-overlay"><strong>Blue Echo</strong><span>Drama · 1h 54m</span></div></a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Afterglow in a new tab"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80" alt="Sunlit desert landscape" loading="lazy"><div class="card-overlay"><strong>Afterglow</strong><span>Romance · 1h 49m</span></div></a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Dark Matter in a new tab"><img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=600&q=80" alt="Colorful nebula in deep space" loading="lazy"><div class="card-overlay"><strong>Dark Matter</strong><span>Sci-Fi · 2h 12m</span></div></a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open The Climb in a new tab"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80" alt="Mountain peaks beneath the clouds" loading="lazy"><div class="card-overlay"><strong>The Climb</strong><span>Adventure · 1h 58m</span></div></a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Last Light in a new tab"><img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=600&q=80" alt="Quiet scenic wilderness" loading="lazy"><div class="card-overlay"><strong>Last Light</strong><span>Mystery · 1h 46m</span></div></a>
+      </div> -->
+    <!-- </section> -->
+
+    <!-- <section class="section-row" id="shows"> -->
+      <!-- <div class="section-heading"><h2>📺 Binge-Worthy Series</h2><small>One more episode?</small></div> -->
+      <!-- <div class="section-heading"><h2>📺 Binge-Worthy Series</h2><small>One more episode Upcoming?</small></div> -->
+      <!-- <div class="poster-grid">
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open The Divide in a new tab"><img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=600&q=80" alt="Dark forest with sunbeams" loading="lazy"><div class="card-overlay"><strong>The Divide</strong><span>Thriller · 3 Seasons</span></div></a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Parallel Lives in a new tab"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=600&q=80" alt="Mountain beneath a starry sky" loading="lazy"><div class="card-overlay"><strong>Parallel Lives</strong><span>Drama · 2 Seasons</span></div></a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Northbound in a new tab"><img src="https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=600&q=80" alt="Snowy mountain wilderness" loading="lazy"><div class="card-overlay"><strong>Northbound</strong><span>Adventure · 1 Season</span></div></a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open City of Ghosts in a new tab"><img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=600&q=80" alt="Night sky and city lights" loading="lazy"><div class="card-overlay"><strong>City of Ghosts</strong><span>Mystery · 4 Seasons</span></div></a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Wild Earth in a new tab"><img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=600&q=80" alt="Golden morning across a field" loading="lazy"><div class="card-overlay"><strong>Wild Earth</strong><span>Documentary · 2 Seasons</span></div></a>
+        <a class="movie-card" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open Signal Zero in a new tab"><img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&w=600&q=80" alt="Stars and distant galaxies" loading="lazy"><div class="card-overlay"><strong>Signal Zero</strong><span>Sci-Fi · 2 Seasons</span></div></a>
+      </div> -->
+    <!-- </section> -->
+
+    <section class="feature-strip">
+      <div><h3>Your watchlist. Your next favorite.</h3><p>Found something interesting? Add your own posters and link each title to its official page.</p></div>
+      <a class="btn btn-watch flex-shrink-0" href="#trending">Explore Collection &nbsp; →</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row g-3 align-items-center">
+        <div class="col-md"><span class="brand">SHAWFLIX</span><p class="mt-2 mb-0">A fan-made movie discovery template. Not affiliated with Netflix.</p></div>
+        <div class="col-md-auto d-flex flex-wrap gap-3"><a href="#home">Home</a><a href="#movies">Movies</a><a href="#shows">TV Shows</a></div>
+        <div class="col-md-auto text-md-end">© <span id="year"></span> SHAWFLIX</div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Search filters poster cards by their visible title and details.
+    const searchInput = document.getElementById('searchInput');
+    const cards = [...document.querySelectorAll('.movie-card')];
+    searchInput.addEventListener('input', () => {
+      const term = searchInput.value.trim().toLowerCase();
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase() + ' ' + (card.getAttribute('aria-label') || '').toLowerCase();
+        card.style.display = text.includes(term) ? '' : 'none';
+      });
+      document.querySelectorAll('.section-row').forEach(section => {
+        const visible = [...section.querySelectorAll('.movie-card')].some(card => card.style.display !== 'none');
+        section.style.display = visible ? '' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>
